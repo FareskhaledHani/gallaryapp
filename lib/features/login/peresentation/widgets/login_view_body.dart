@@ -94,7 +94,7 @@ class _LoginViewBodyState extends State<LoginViewBody> {
                                   obscureText: true,
                                   textEditingController: _passwordController,
                                   validator: (value) {
-                                    if(value!.isEmpty){ return S.;}
+                                    if(value!.isEmpty){ return 'Password Is Empty';}
                                     else if (value.length<8&&value.length>1){return 'Password Is Least Please Check Password';}
                                     return null;  },
                                 ),
